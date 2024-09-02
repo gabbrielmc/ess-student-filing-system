@@ -4,7 +4,7 @@ from PIL import Image
 import img2pdf
 
 # Set the path to your unzipped folder
-base_directory = "/Users/gabbrielmcintosh/Downloads/regsheets"
+base_directory = "path to regsheets"
 # Directory to store converted PDF files
 output_directory = os.path.join(base_directory, "Converted_PDFs")
 # Path to the CSV file for logging
