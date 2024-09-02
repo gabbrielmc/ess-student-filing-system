@@ -1,38 +1,52 @@
 # ess-student-filing-system
-1. Project Overview
 
-Purpose: The project automates the conversion, organization, and verification of student registration sheet files, ensuring they are in the correct format (PDF) and stored in organized subfolders.
+## Project Overview
 
-Language: Python
+This project automates the conversion, organization, and verification of student registration sheet files. It ensures that all files are correctly formatted as PDFs and stored in well-organized subfolders.
 
-Libraries Used:
-- PIL: Used for image handling and conversion.
-- img2pdf: Converts images to PDF format.
-- csv: Handles the logging of processed files.
-- os, shutil: Manages file and directory operations.
+### Key Features:
+- **Conversion:** Automatically converts image files (JPEG, PNG) to PDF format.
+- **Organization:** Places the PDFs in subfolders based on the student's last name and ID.
+- **Verification:** Checks that all files have been correctly processed and organized.
 
-2. Installation Instructions
+### Language & Libraries:
+- **Language:** Python
+- **Libraries Used:**
+  - `PIL`: For image handling and conversion.
+  - `img2pdf`: Converts images to PDF format.
+  - `csv`: Manages the logging of processed files.
+  - `os`, `shutil`: Handles file and directory operations.
 
-Install the required Python libraries:
-- pip install pillow img2pdf
+## Installation Instructions
 
-3. File Descriptions
-file_converter.py: Converts image files (JPEG, PNG) to PDF and moves existing PDF files to a designated folder. Logs the status of each file.
+To get started, install the required Python libraries:
 
-file_converter_checker.py: Compares the original folder with the converted files folder to ensure all files were processed correctly.
+```bash
+pip install pillow img2pdf
+```
 
-organize_files.py: Organizes the converted PDF files into subfolders based on the first letter of the last name, and further into subfolders named with the student's full name and ID.
+## File Descriptions
 
-organization_checker.py: Verifies that the organized folder matches the original folder in terms of file count and names, ensuring every file is correctly organized.
+- **`file_converter.py`**  
+  Converts image files (JPEG, PNG) to PDF and moves existing PDF files to a designated folder. It also logs the status of each file.
 
-4. How to Use
-Place all the files to be processed in the regsheets directory.
-Run file_converter.py to convert and move the files.
-Run file_converter_checker.py to verify the conversion.
-Run organize_files.py to organize the converted files into subfolders.
-Run file_organization_checker.py to verify that all files are correctly organized.
+- **`file_converter_checker.py`**  
+  Compares the original folder with the converted files folder to ensure all files were processed correctly.
 
-5. Logs
-Logs for file conversion and organization are stored in the same directory as the original files (regsheets).
+- **`organize_files.py`**  
+  Organizes the converted PDF files into subfolders based on the first letter of the last name and further into subfolders named with the student's full name and ID.
 
-The CSV logs include the status of each file, noting any errors or unprocessed files.
+- **`organization_checker.py`**  
+  Verifies that the organized folder matches the original folder in terms of file count and names, ensuring every file is correctly organized.
+
+## How to Use
+
+1. **Place Files:** Put all the files to be processed in the `regsheets` directory.
+2. **Convert Files:** Run `file_converter.py` to convert images to PDFs and move the files.
+3. **Verify Conversion:** Run `file_converter_checker.py` to ensure all files were converted successfully.
+4. **Organize Files:** Run `organize_files.py` to sort the converted files into the appropriate subfolders.
+5. **Check Organization:** Run `organization_checker.py` to verify that all files are correctly organized.
+
+## Logs
+
+Logs for file conversion and organization are stored in the same directory as the original files (`regsheets`). These CSV logs include the status of each file, noting any errors or unprocessed files.
