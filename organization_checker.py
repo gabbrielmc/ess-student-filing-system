@@ -2,8 +2,8 @@ import os
 import csv
 
 # Paths to the original and organized folders
-original_folder = "/Users/gabbrielmcintosh/Downloads/regsheets"
-organized_folder = "/Users/gabbrielmcintosh/Downloads/new"
+original_folder = " "
+organized_folder = " "
 
 # Function to get a list of all files in a folder and its subfolders, ignoring extensions
 def get_all_files(directory):
@@ -40,7 +40,7 @@ else:
         print(f"Extra files: {len(extra_files)}")
 
 # Save the report to a CSV file
-with open('/Users/gabbrielmcintosh/Downloads/comparison_report.csv', 'w', newline='') as csvfile:
+with open(' ', 'w', newline='') as csvfile:
     fieldnames = ['File Name', 'Status']
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
 
