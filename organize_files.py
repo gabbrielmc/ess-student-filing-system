@@ -2,7 +2,7 @@ import os
 import shutil
 
 # Path to the main folder where files are located
-base_directory = "/Users/gabbrielmcintosh/Downloads/regsheets"
+base_directory = "path to reg sheets"
 
 # Function to extract the last name from the file name
 def extract_last_name(file_name):
