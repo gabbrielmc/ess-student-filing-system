@@ -2,7 +2,7 @@ import os
 import csv
 
 # Set the paths
-original_folder = "/Users/gabbrielmcintosh/Downloads/regsheets"
+original_folder = "path to reg sheets"
 converted_folder = os.path.join(original_folder, "Converted_PDFs")
 comparison_csv_path = os.path.join(original_folder, "comparison_log.csv")
 
